@@ -1,0 +1,99 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #00bcd4;
+  padding: 20px 0;
+}
+.header h1 {
+  font-size: 2.5rem;
+}
+
+/* Contenedor de tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Tarjetas (cards) */
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 260px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: #00bcd4;
+  color: #1a1a1a;
+}
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 0.9rem;
+}
+
+/* Imagen en la tarjeta */
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Sección de rutina */
+.routine-section {
+  display: none;
+  padding: 50px 20px;
+}
+.routine-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.routine-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.btn-back {
+  background-color: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+.btn-back:hover {
+  background-color: #008c9e;
+}
+
+/* Footer */
+.footer {
+  background-color: #00bcd4;
+  padding: 20px 0;
+  font-weight: bold;
+  margin-top: 50px;
+}

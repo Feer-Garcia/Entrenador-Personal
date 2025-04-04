@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Power - Gym</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>FULL POWER - GYM</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="main-content">
+    <section class="card-container">
+      <!--Entrenamiento de Fuerza -->
+      <div class="card" onclick="showRoutine('fuerza')">
+        <!---->
+        
+       
+        <h2>Entrenamiento de Fuerza</h2>
+        <p>Descubre tu rutina de fuerza</p>
+      </div>
+
+      <div class="card" onclick="showMessage('Cardio y Resistencia')">
+        <h2>Cardio y Resistencia</h2>
+        <p>Mejora tu salud cardiovascular</p>
+      </div>
+
+      <div class="card" onclick="showMessage('Nutrición y Dieta')">
+        <h2>Nutrición y Dieta</h2>
+        <p>Consejos para una dieta saludable</p>
+      </div>
+
+      <div class="card" onclick="showMessage('Plan de Rutinas')">
+        <h2>Plan de Rutinas</h2>
+        <p>Rutinas personalizadas para ti</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección de rutina de fuerza (inicialmente oculta) -->
+  <section id="routine" class="routine-section">
+    <h2>Rutina de Fuerza</h2>
+    <div class="routine-details">
+      <p><strong>Día 1:</strong> Push</p>
+      <p><strong>Día 2:</strong> Pull</p>
+      <p><strong>Día 3:</strong> Piernas</p>
+    </div>
+    <button class="btn-back" onclick="hideRoutine()">Volver</button>
+  </section>
+
+  <footer class="footer">
+    <p>¡Transforma tu cuerpo con Full Power!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

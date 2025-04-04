@@ -1,0 +1,209 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #00bcd4;
+  padding: 20px 0;
+}
+.header h1 {
+  font-size: 2.5rem;
+}
+
+/* Contenedor de tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+/* Tarjetas (cards) */
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 260px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: #00bcd4;
+  color: #1a1a1a;
+}
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 0.9rem;
+}
+
+/* Imagen en la tarjeta */
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Sección de rutina */
+.routine-section {
+  display: none;
+  padding: 50px 20px;
+}
+.routine-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.routine-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.btn-back {
+  background-color: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+.btn-back:hover {
+  background-color: #008c9e;
+}
+
+/* Sección de formulario */
+.formulario-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #00bcd4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.formulario-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.formulario-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.formulario-section label {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #00bcd4;
+}
+.formulario-section input,
+.formulario-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #00bcd4;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formulario-section input:focus,
+.formulario-section textarea:focus {
+  border-color: #008c9e;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+.formulario-section button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  align-self: center;
+}
+.formulario-section button:hover {
+  background-color: #008c9e;
+}
+
+/* Sección de temario */
+.temario-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #00bcd4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+.temario-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.temario-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.temario-section label {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #00bcd4;
+}
+.temario-section input,
+.temario-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #00bcd4;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.temario-section input:focus,
+.temario-section select:focus {
+  border-color: #008c9e;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+.temario-section button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  align-self: center;
+}
+.temario-section button:hover {
+  background-color: #008c9e;
+}
+
+/* Footer */
+.footer {
+  background-color: #00bcd4;
+  padding: 20px 0;
+  font-weight: bold;
+  margin-top: 50px;
+}
